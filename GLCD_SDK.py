@@ -42,7 +42,7 @@ COLOR_HEIGHT = 240
 def chkDLL():
     try:
         _dll
-    except(NameError,),e:
+    except(NameError,) as e:
         if(str(e).split("'")[1] == "_dll"):
             raise Exception('initDLL!!!!!!!!')
         else:
@@ -109,7 +109,7 @@ def flatten(listOfLists):
 if __name__ == "__main__":
     import platform, sys
     if platform.system() != "Windows":
-        print "Host is not Windows. This module can't work"
+        print("Host is not Windows. This module can't work")
         sys.exit(0)
     else:
-        print "Host is Windows. This module can work"
+        print("Host is Windows. This module can work")

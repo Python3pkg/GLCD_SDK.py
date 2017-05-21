@@ -21,7 +21,7 @@ if GLCD_SDK.LogiLcdIsConnected(GLCD_SDK.TYPE_MONO):
 GLCD_SDK.LogiLcdUpdate()
 
 if not(GLCD_SDK.LogiLcdIsConnected(GLCD_SDK.TYPE_COLOR)) and not(GLCD_SDK.LogiLcdIsConnected(GLCD_SDK.TYPE_MONO)):
-    print "Could not connect to a logitch LCD"
+    print("Could not connect to a logitch LCD")
     os.exit(-1)
 i=0
 time.sleep(20) 
